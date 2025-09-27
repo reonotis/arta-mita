@@ -1,0 +1,420 @@
+/***********************************
+* ヒーロー画像のスタイル
+***********************************/
+.hero-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 2; /* 5:2の横長比率（デスクトップ） */
+  object-fit: cover; /* 画像の縦横比を保持しながらコンテナにフィット */
+  display: block;
+  margin-bottom: 15rem;
+
+  /* スマートフォン用のスタイル */
+  @media (max-width: 768px) {
+    aspect-ratio: 2 / 2.5; /* 2:5の縦長比率（スマートフォン） */
+  }
+}
+
+/***********************************
+* メインコンテンツセクション
+***********************************/
+.how-to-brazilian-jiu-jitsu {
+  position: relative;
+  min-height: 50vh;
+  background-image: url('https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+
+    .hero-text {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        text-align: left;
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #000;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        background-color: #333;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+/***********************************
+* 三田道場のご紹介セクション
+***********************************/
+.mita-info {
+  padding-bottom: 15rem;
+
+
+  .mita-columns {
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .mita-column {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+        .mita-image img {
+          transform: scale(1.05);
+        }
+      }
+
+      .mita-image {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .mita-content {
+        padding: 2rem;
+
+        .mita-heading {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #333;
+          margin: 0 0 1rem 0;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #666;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1rem;
+
+      .mita-column {
+        .mita-image {
+          height: 200px;
+        }
+
+        .mita-content {
+          padding: 1.5rem;
+
+          .mita-heading {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mita-column {
+        .mita-content {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/***********************************
+* 各会員コース・料金のご案内セクション
+***********************************/
+.course-info {
+  padding-bottom: 15rem;
+  background-color: #f8f9fa;
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+
+    .course-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+        .course-image img {
+          transform: scale(1.05);
+        }
+      }
+
+      .course-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .course-content {
+        padding: 1.5rem;
+
+        .course-title-en {
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: #333;
+          margin: 0 0 0.5rem 0;
+          text-align: left;
+        }
+
+        .course-title-jp {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: #666;
+          margin: 0 0 1rem 0;
+          text-align: left;
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.6;
+          color: #666;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      padding: 0;
+
+      .course-card {
+        grid-template-columns: repeat(2, 1fr);
+
+        .course-image {
+          height: 180px;
+        }
+
+        .course-content {
+          padding: 1.2rem;
+
+          .course-title-en {
+            font-size: 1.2rem;
+          }
+
+          .course-title-jp {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      .course-card {
+        .course-content {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/***********************************
+* 週間 基本スケジュール​
+***********************************/
+
+.basic-calendar-image {
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/***********************************
+* アクセス
+***********************************/
+.access-section {
+  padding: 4rem 0;
+  background-color: #fff;
+
+  .access-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .access-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .access-item {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #333;
+
+        .access-label {
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: #333;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .access-value {
+          font-size: 1rem;
+          color: #666;
+          line-height: 1.6;
+          margin: 0;
+        }
+      }
+    }
+
+    .access-map {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1rem;
+
+      .access-info {
+        gap: 1.5rem;
+
+        .access-item {
+          padding: 1.2rem;
+
+          .access-label {
+            font-size: 1rem;
+          }
+
+          .access-value {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .access-map {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .access-info {
+        .access-item {
+          padding: 1rem;
+
+          .access-label {
+            font-size: 0.95rem;
+          }
+
+          .access-value {
+            font-size: 0.85rem;
+          }
+        }
+      }
+
+      .access-map {
+        height: 250px;
+      }
+    }
+  }
+}
+
