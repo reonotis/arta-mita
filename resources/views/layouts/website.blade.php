@@ -43,13 +43,13 @@
 <body class="home page-template-default page page-id-19 custom-background wp-custom-logo ja overlap-first-section mesmerize-front-page mesmerize-content-padding elementor-default elementor-kit-21 elementor-page elementor-page-19">
 
     <div class="page-wrapper">
-        @include('components.header')
+        @include('layouts.header')
 
         <main class="main-content">
             @yield('content')
         </main>
 
-        @include('components.footer')
+        @include('layouts.footer')
     </div>
 
     @stack('scripts')

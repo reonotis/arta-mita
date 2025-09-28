@@ -1,7 +1,7 @@
 @extends('layouts.website')
 
 @push('styles')
-    <link rel='stylesheet' href="{{ asset('css/welcome.css') }}" type='text/css' media='all' />
+    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}?time={{ time() }}" type='text/css' media='all' />
 @endpush
 
 @section('content')

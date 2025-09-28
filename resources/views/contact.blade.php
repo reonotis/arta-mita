@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- 共通フォームスタイルを読み込み --}}
-<link rel="stylesheet" href="{{ asset('css/form-styles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/form-styles.css') }}?time={{ time() }}">
 
 {{-- モダンな体験申込フォーム --}}
 <section class="contact-container">
@@ -43,7 +43,7 @@
 </section>
 
 {{-- 共通フォームJavaScriptを読み込み --}}
-<script src="{{ asset('js/form-handler.js') }}"></script>
+<script src="{{ asset('js/form-handler.js') }}?time={{ time() }}"></script>
 
 @endsection
 

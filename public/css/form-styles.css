@@ -102,6 +102,7 @@
 .radio-group {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -239,9 +240,6 @@
         height: 6px;
     }
 
-    .radio-group {
-        flex-direction: column;
-    }
 
     .submit-btn {
         padding: 16px 24px;
