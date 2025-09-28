@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Mail\ContactNotificationMail;
 use App\Mail\ContactThankYouMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+/**
+ * コンタクトフォームのコントローラークラス
+ */
 class ContactController extends Controller
 {
     public function index()
@@ -36,7 +38,7 @@ class ContactController extends Controller
 
             // 問い合わせ完了メール送信
             Mail::to($contact->email)
-                ->bcc('fujisawa@reonotis.jp')
+                ->bcc('fujisawareon@yahoo.co.jp')
                 ->send(new ContactThankYouMail($contact));
 
 

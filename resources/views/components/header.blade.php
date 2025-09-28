@@ -32,10 +32,10 @@
         //     'url' => '#',
         //     'route' => 'faq'
         // ],[
-        //     'title' => '体験申込',
-        //     'url' => '#challenge/',
-        //     'route' => 'trial'
-        // ],[
+            'title' => '体験申込',
+            'url' => route('trial'),
+            'route' => 'trial'
+        ],[
             'title' => '問い合わせ',
             'url' => route('contact'),
             'route' => 'contact'
