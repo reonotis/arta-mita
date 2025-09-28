@@ -46,7 +46,7 @@
                                                                                 </g>
                                                                             </mask>
                                                                         </defs>
-                                                                        <image xlink:href="{{ asset('images/carpediemmita.svg') }}" width="100%" height="100%" mask="url(#clipMask)"></image>
+                                                                        <image xlink:href="" width="100%" height="100%" mask="url(#clipMask)"></image>
                                                                     </svg>
                                                                 </div>
                                                             </div>
