@@ -4,10 +4,10 @@
 
     $menuItems = [
         [
-        //     'title' => '初めての方へ',
-        //     'url' => '#',
-        //     'route' => 'first'
-        // ],[
+            'title' => '初めての方へ',
+            'url' => route('first'),
+            'route' => 'first'
+        ],[
         //     'title' => '会員プラン',
         //     'url' => '#',
         //     'route' => 'plan'

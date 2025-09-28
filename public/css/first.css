@@ -1,0 +1,400 @@
+
+/***********************************
+* 見学・無料体験
+***********************************/
+
+/***********************************
+* レッスンについて
+***********************************/
+
+/***********************************
+* 施設の紹介セクション
+***********************************/
+.facility-intro {
+    background-color: #f8f9fa;
+
+    .facility-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .facility-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+                .facility-image img {
+                    transform: scale(1.05);
+                }
+            }
+
+            .facility-image {
+                width: 100%;
+                aspect-ratio: 5 / 3; /* 画像の縦横比を固定 */
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .facility-caption {
+                padding: 20px;
+                text-align: center;
+
+                h4 {
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #333;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+
+        .facility-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 0 15px;
+
+            .facility-item {
+                .facility-image {
+                    height: 150px;
+                }
+
+                .facility-caption {
+                    padding: 15px;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .facility-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+
+            .facility-item {
+                .facility-image {
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+
+/***********************************
+* 入会の流れセクション
+***********************************/
+.enrollment-flow {
+    background-color: #f8f9fa;
+
+    .enrollment-columns {
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .enrollment-column {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            /* 2つ目のカラムを3rem下に移動 */
+            &:nth-child(2) {
+                transform: translateY(3rem);
+            }
+
+            /* 3つ目のカラムを6rem下に移動 */
+            &:nth-child(3) {
+                transform: translateY(6rem);
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+                .enrollment-image img {
+                    transform: scale(1.05);
+                }
+            }
+
+            /* 2つ目のカラムのホバー時 */
+            &:nth-child(2):hover {
+                transform: translateY(calc(3rem - 5px));
+            }
+
+            /* 3つ目のカラムのホバー時 */
+            &:nth-child(3):hover {
+                transform: translateY(calc(6rem - 5px));
+            }
+
+            .enrollment-image {
+                width: 100%;
+                aspect-ratio: 4 / 3; /* 画像の縦横比を維持 */
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .enrollment-content {
+                padding: 30px 25px;
+
+                .enrollment-heading {
+                    margin: 0 0 20px 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #333;
+                    line-height: 1.4;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.7;
+                    color: #666;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 1024px) {
+        .enrollment-columns {
+            gap: 30px;
+
+            .enrollment-column {
+                min-width: 280px;
+                max-width: 350px;
+
+                .enrollment-content {
+                    padding: 25px 20px;
+
+                    .enrollment-heading {
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .enrollment-columns {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+
+            .enrollment-column {
+                width: 100%;
+                max-width: 500px;
+                min-width: auto;
+
+                /* モバイルでは斜め配置を解除 */
+                &:nth-child(2),
+                &:nth-child(3) {
+                    transform: none;
+                }
+
+                &:nth-child(2):hover,
+                &:nth-child(3):hover {
+                    transform: translateY(-5px);
+                }
+
+                .enrollment-content {
+                    padding: 20px;
+
+                    .enrollment-heading {
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .enrollment-columns {
+            .enrollment-column {
+                .enrollment-content {
+                    padding: 15px;
+
+                    .enrollment-heading {
+                        font-size: 16px;
+                        margin-bottom: 12px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***********************************
+* 見学・体験について
+***********************************/
+.trial-info {
+    background-color: #fff;
+
+    .section-body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .trial-sections {
+        margin-bottom: 50px;
+
+        .trial-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #333;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .trial-heading {
+                margin: 0 0 20px 0;
+                font-size: 20px;
+                font-weight: 600;
+                color: #333;
+                line-height: 1.4;
+            }
+
+            .trial-description {
+                margin: 0 0 15px 0;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #555;
+            }
+
+            .trial-note {
+                margin: 0 0 10px 0;
+                font-size: 14px;
+                line-height: 1.6;
+                color: #666;
+                font-weight: 500;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+        .section-body {
+            padding: 0 15px;
+        }
+
+        .trial-sections {
+            margin-bottom: 40px;
+
+            .trial-section {
+                margin-bottom: 30px;
+                padding: 20px;
+
+                .trial-heading {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                .trial-description {
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                }
+
+                .trial-note {
+                    font-size: 13px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .trial-cta {
+            .trial-button {
+                padding: 12px 25px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .trial-sections {
+            .trial-section {
+                padding: 15px;
+
+                .trial-heading {
+                    font-size: 16px;
+                }
+
+                .trial-description {
+                    font-size: 13px;
+                    line-height: 1.6;
+                }
+
+                .trial-note {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .trial-cta {
+            .trial-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
