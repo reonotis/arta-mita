@@ -10,7 +10,7 @@
 }
 
 section{
-    padding: 8rem 0;
+    padding: 8rem 0 15rem;
 
     .section-title {
         text-align: center;
@@ -26,7 +26,7 @@ section{
 
     /* レスポンシブデザイン */
     @media (max-width: 768px) {
-        padding: 3rem 0;
+        padding: 3rem 0 8rem;
 
         .section-title h3 {
             font-size: 2rem;

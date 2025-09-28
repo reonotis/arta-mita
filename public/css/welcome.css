@@ -80,8 +80,6 @@
 * 三田道場のご紹介セクション
 ***********************************/
 .mita-info {
-  padding-bottom: 15rem;
-
 
   .mita-columns {
     gap: 2rem;
@@ -96,6 +94,16 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+      /* 2つ目のカラムを3rem下に移動 */
+      &:nth-child(2) {
+        transform: translateY(3rem);
+      }
+
+      /* 3つ目のカラムを6rem下に移動 */
+      &:nth-child(3) {
+        transform: translateY(6rem);
+      }
+
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -103,6 +111,16 @@
         .mita-image img {
           transform: scale(1.05);
         }
+      }
+
+      /* 2つ目のカラムのホバー時 */
+      &:nth-child(2):hover {
+        transform: translateY(calc(3rem - 5px));
+      }
+
+      /* 3つ目のカラムのホバー時 */
+      &:nth-child(3):hover {
+        transform: translateY(calc(6rem - 5px));
       }
 
       .mita-image {
@@ -146,6 +164,9 @@
       padding: 0 1rem;
 
       .mita-column {
+        /* レスポンシブ時はtransformを解除 */
+        transform: none !important;
+
         .mita-image {
           aspect-ratio: 5 / 3.5; /* モバイルでも同じ縦横比を維持 */
         }
@@ -178,8 +199,6 @@
 * 各会員コース・料金のご案内セクション
 ***********************************/
 .course-info {
-  padding-bottom: 15rem;
-  background-color: #f8f9fa;
 
   .course-grid {
     display: grid;
@@ -287,6 +306,7 @@
       }
     }
   }
+
 }
 
 /***********************************
