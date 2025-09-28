@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+下記内容の申し込みを受け付けました<br>
+■名前<br>
+　 {{ $contact->name }}<br>
+■メールアドレス<br>
+　{{ $contact->email }}<br>
+■お問い合わせ内容<br>
+　{{ $contact->message }}<br>
+<br>
+</body>
+</html>

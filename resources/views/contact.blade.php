@@ -301,23 +301,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 入力フィールドのアニメーション効果
-    const inputs = document.querySelectorAll('input, textarea');
-    inputs.forEach(input => {
-        input.addEventListener('focus', function() {
-            this.parentElement.style.transform = 'scale(1.02)';
-        });
-
-        input.addEventListener('blur', function() {
-            this.parentElement.style.transform = 'scale(1)';
-        });
-    });
-
-    // ページ読み込み時のアニメーション
-    const formGroups = document.querySelectorAll('.form-group');
-    formGroups.forEach((group, index) => {
-        group.style.animationDelay = `${(index + 1) * 0.1}s`;
-    });
 });
 </script>
 
