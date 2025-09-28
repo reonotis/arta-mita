@@ -6,9 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/first', [HomeController::class, 'first'])->name('first');
-Route::get('/old', [HomeController::class, 'old']);
-
-
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::post('/contact', [HomeController::class, 'contactRegister']);
 
 
 Route::middleware('auth')->group(function () {

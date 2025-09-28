@@ -4,40 +4,40 @@
 
     $menuItems = [
         [
-            'title' => '初めての方へ',
-            'url' => route('first'),
-            'route' => 'first'
-        ],[
-            'title' => '会員プラン',
-            'url' => '#',
-            'route' => 'plan'
-        ],[
-            'title' => 'クラスについて',
-            'url' => '#',
-            'route' => 'classes'
-        ],[
-            'title' => 'インストラクター一覧',
-            'url' => '#',
-            'route' => 'instructors'
-        ],[
-            'title' => 'お客様の声',
-            'url' => '#',
-            'route' => 'testimonials'
-        ],[
-            'title' => 'ビジター',
-            'url' => '#',
-            'route' => 'visitor'
-        ],[
-            'title' => 'よくある質問',
-            'url' => '#',
-            'route' => 'faq'
-        ],[
-            'title' => '体験申込',
-            'url' => '#challenge/',
-            'route' => 'trial'
-        ],[
+        //     'title' => '初めての方へ',
+        //     'url' => '#',
+        //     'route' => 'first'
+        // ],[
+        //     'title' => '会員プラン',
+        //     'url' => '#',
+        //     'route' => 'plan'
+        // ],[
+        //     'title' => 'クラスについて',
+        //     'url' => '#',
+        //     'route' => 'classes'
+        // ],[
+        //     'title' => 'インストラクター一覧',
+        //     'url' => '#',
+        //     'route' => 'instructors'
+        // ],[
+        //     'title' => 'お客様の声',
+        //     'url' => '#',
+        //     'route' => 'testimonials'
+        // ],[
+        //     'title' => 'ビジター',
+        //     'url' => '#',
+        //     'route' => 'visitor'
+        // ],[
+        //     'title' => 'よくある質問',
+        //     'url' => '#',
+        //     'route' => 'faq'
+        // ],[
+        //     'title' => '体験申込',
+        //     'url' => '#challenge/',
+        //     'route' => 'trial'
+        // ],[
             'title' => '問い合わせ',
-            'url' => '#',
+            'url' => route('contact'),
             'route' => 'contact'
         ]
     ];

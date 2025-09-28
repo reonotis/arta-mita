@@ -7,23 +7,19 @@
 @section('content')
 
 
-<img src="{{ asset('http://carpediem-mita.com/wp-content/uploads/2021/11/S__70140123.jpg') }}" alt="arta-mita" class="hero-image">
+<img src="{{ asset('images/hero-image.jpg') }}" alt="arta-mita" class="hero-image">
 
 {{-- メインコンテンツセクション --}}
 <section class="how-to-brazilian-jiu-jitsu">
-    <div class="content-wrapper">
-        <div class="hero-content">
-            <div class="hero-text">
-
-                <div class="section-title">
-                    <h3>心も身体も強くなる格闘技</h3>
-                </div>
-
-                <p>ブラジリアン柔術は、一般的なフィットネスジムとは違い、頭を使いながら身体も使う、論理性、戦略性の高いスポーツです。</p>
-                <p>その論理性や戦略性が高い事から、老若男女問わず、世界中で急速に広がる人気を見せています。</p>
-                <p>「柔術」または「BJJ」という名前で、アメリカやアジアを始めとした様々な国々で安全性、実用性、アート性、そしてオシャレさが評価され絶大な人気を誇っています。</p>
-                <a href="{{ url('/') }}" class="cta-button">初めての方へ</a>
-            </div>
+    <div class="content-wrapper hero-content">
+        <div class="section-title">
+            <h3 class="">心も身体も強くなる格闘技</h3>
+        </div>
+        <div class="section-body " >
+            <p>ブラジリアン柔術は、一般的なフィットネスジムとは違い、頭を使いながら身体も使う、論理性、戦略性の高いスポーツです。</p>
+            <p>その論理性や戦略性が高い事から、老若男女問わず、世界中で急速に広がる人気を見せています。</p>
+            <p>「柔術」または「BJJ」という名前で、アメリカやアジアを始めとした様々な国々で安全性、実用性、アート性、そしてオシャレさが評価され絶大な人気を誇っています。</p>
+            <a href="{{ url('/') }}" class="submit-btn">初めての方へ</a>
         </div>
     </div>
 </section>
@@ -39,7 +35,7 @@
             {{-- 初心者大歓迎セクション --}}
             <div class="mita-column">
                 <div class="mita-image">
-                    <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="初心者大歓迎" />
+                    <img src="{{ asset('images/mita-info/初心者大歓迎.jpg') }}" alt="初心者大歓迎" />
                 </div>
                 <div class="mita-content">
                     <h3 class="mita-heading">初心者大歓迎</h3>
@@ -50,7 +46,7 @@
             {{-- 三田道場の強みセクション --}}
             <div class="mita-column">
                 <div class="mita-image">
-                    <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="三田道場の強み" />
+                    <img src="{{ asset('images/mita-info/三田道場の強み.jpg') }}" alt="三田道場の強み" />
                 </div>
                 <div class="mita-content">
                     <h3 class="mita-heading">三田道場の強み</h3>
@@ -61,7 +57,7 @@
             {{-- 完璧より前進セクション --}}
             <div class="mita-column">
                 <div class="mita-image">
-                    <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="完璧より前進" />
+                    <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="完璧より前進" />
                 </div>
                 <div class="mita-content">
                     <h3 class="mita-heading">完璧より前進</h3>
@@ -83,7 +79,7 @@
                 {{-- All belt class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="All belt class" />
+                        <img src="{{ asset('images/course-info/AllBeltClass.jpg') }}" alt="All belt class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">All belt class</h4>
@@ -95,7 +91,7 @@
                 {{-- White belt class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="White belt class" />
+                        <img src="{{ asset('images/course-info/WhiteBeltClass.jpg') }}" alt="White belt class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">White belt class</h4>
@@ -107,7 +103,7 @@
                 {{-- Basic class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="Basic class" />
+                        <img src="{{ asset('images/course-info/BasicClass.jpg') }}" alt="Basic class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">Basic class</h4>
@@ -119,7 +115,7 @@
                 {{-- Grappling class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="Grappling class" />
+                        <img src="{{ asset('images/course-info/GrapplingClass.jpg') }}" alt="Grappling class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">Grappling class</h4>
@@ -131,7 +127,7 @@
                 {{-- Kids class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="Kids class" />
+                        <img src="{{ asset('images/course-info/KidsClass.jpg') }}" alt="Kids class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">Kids class</h4>
@@ -143,7 +139,7 @@
                 {{-- Women class --}}
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://carpediem-mita.com/wp-content/uploads/2021/11/S__53362797.jpg" alt="Women class" />
+                        <img src="{{ asset('images/course-info/WomensOnlyClass.jpg') }}" alt="Women class" />
                     </div>
                     <div class="course-content">
                         <h4 class="course-title-en">Women class</h4>
@@ -179,14 +175,12 @@
             <h3 class="">感染症対策について​</h3>
         </div>
 
-
         <div class="section-body" style="max-width: 650px; margin: 0 auto;">
             <p>ARTA Mitaでは通常の掃除に加え、換気・消毒を徹底しています。</p>
             <p>また、定期的に空調設備の清掃も行っております。</p>
             <p>入室前に受付で検温・アルコール消毒を実施します。熱がある場合は練習に参加する事はできません。</p>
             <p>会員カードによる入退室管理も行っています。</p>
         </div>
-
     </div>
 </section>
 

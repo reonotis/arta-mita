@@ -10,6 +10,13 @@ RESET
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 .flex-center-center {
     display: flex;
     justify-content: center;
