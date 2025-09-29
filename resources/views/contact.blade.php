@@ -29,6 +29,19 @@
             </div>
 
             <div class="form-group">
+                <label for="email">問い合わせ内容</label>
+                <div class="radio-group">
+                    @foreach(App\Models\Contact::CONTACT_TYPE_LIST as $contactTypeId => $contactTypeName)
+                    <label class="radio-option">
+                        <input type="radio" name="contact_type" value="{{ $contactTypeId }}" required>
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">{{ $contactTypeName }}</span>
+                    </label>
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label for="message">メッセージ</label>
                 <textarea name="message" id="message" placeholder="お気軽にお問い合わせください..." required></textarea>
             </div>

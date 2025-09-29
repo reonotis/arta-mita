@@ -61,15 +61,15 @@ class TrialController extends Controller
                 'course_id' => $request->course_id,
             ]);
 
-            // 管理者への問い合わせ通知メール送信
-            Mail::to(env('MAIL_FROM_ADDRESS'))
-                ->bcc('fujisawareon@yahoo.co.jp')
-                ->send(new TrialNotificationMail($customer, $trial));
+            // // 管理者への問い合わせ通知メール送信
+            // Mail::to(env('MAIL_FROM_ADDRESS'))
+            //     ->bcc('fujisawareon@yahoo.co.jp')
+            //     ->send(new TrialNotificationMail($customer, $trial));
 
-            // 問い合わせ完了メール送信
-            Mail::to($trial->email)
-                ->bcc('fujisawareon@yahoo.co.jp')
-                ->send(new TrialThankYouMail($trial));
+            // // 問い合わせ完了メール送信
+            // Mail::to($trial->email)
+            //     ->bcc('fujisawareon@yahoo.co.jp')
+            //     ->send(new TrialThankYouMail($trial));
 
             // 成功レスポンス
             return response()->json([

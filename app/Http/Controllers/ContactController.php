@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactNotificationMail;
 use App\Mail\ContactThankYouMail;
 use App\Models\Contact;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -28,18 +29,36 @@ class ContactController extends Controller
         ]);
 
         try {
+
+            // メールアドレスから顧客を取得
+            $customer = Customer::where('email', $request->email)->first();
+
+            // 顧客がいなければ登録
+            if (is_null($customer)) {
+                $customer = Customer::create([
+                    'name' => $request->name,
+                    'email' => $request->email,
+                ]);
+            }
+
             // 登録処理
-            $contact = Contact::create($request->all());
+            $contact = Contact::create( [
+                'customer_id' => $customer->id,
+                'name' => $request->name,
+                'email' => $request->email,
+                'message' => $request->message,
+                'contact_type' => $request->contact_type,
+            ]);
 
-            // 管理者への問い合わせ通知メール送信
-            Mail::to(env('MAIL_FROM_ADDRESS'))
-                ->bcc('fujisawareon@yahoo.co.jp')
-                ->send(new ContactNotificationMail($contact));
+            // // 管理者への問い合わせ通知メール送信
+            // Mail::to(env('MAIL_FROM_ADDRESS'))
+            //     ->bcc('fujisawareon@yahoo.co.jp')
+            //     ->send(new ContactNotificationMail($contact));
 
-            // 問い合わせ完了メール送信
-            Mail::to($contact->email)
-                ->bcc('fujisawareon@yahoo.co.jp')
-                ->send(new ContactThankYouMail($contact));
+            // // 問い合わせ完了メール送信
+            // Mail::to($contact->email)
+            //     ->bcc('fujisawareon@yahoo.co.jp')
+            //     ->send(new ContactThankYouMail($contact));
 
 
             // 成功レスポンス

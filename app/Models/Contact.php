@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property string $email
  * @property string $message
+ * @property int $customer_id
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon $deleted_at
@@ -17,6 +18,17 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
+
+    const CONTACT_TYPE_JOIN = 1;
+    const CONTACT_TYPE_PRIVATE_LESSON = 2;
+    const CONTACT_TYPE_VISITOR = 3;
+    const CONTACT_TYPE_OTHER = 4;
+    const CONTACT_TYPE_LIST = [
+        self::CONTACT_TYPE_JOIN => '入会・退会・休会',
+        self::CONTACT_TYPE_PRIVATE_LESSON => 'プライベートレッスン申し込み',
+        self::CONTACT_TYPE_VISITOR => 'ビジター',
+        self::CONTACT_TYPE_OTHER => 'その他',
+    ];
 
     protected $table = 'contact';
 
@@ -34,7 +46,9 @@ class Contact extends Model
     protected $fillable = [
         'name',
         'email',
-        'message'
+        'message',
+        'customer_id',
+        'contact_type',
     ];
 
 }

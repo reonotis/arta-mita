@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->integer('customer_id');
+            $table->tinyInteger('contact_type')->default(0)->comment('問い合わせ種別');
+
             $table->text('message');
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'))->comment('作成日時');
