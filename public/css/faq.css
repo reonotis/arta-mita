@@ -1,0 +1,116 @@
+.faq-section .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 80px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 2rem;
+}
+
+.faq-q {
+    width: 100%;
+    background: #fff;
+    border: 0;
+    text-align: left;
+    padding: 18px 44px 18px 0;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-q:hover {
+    background: #fafafa;
+}
+
+.faq-q .faq-q-label {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.faq-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.faq-toggle::before, .faq-toggle::after {
+    content: "";
+    position: absolute;
+    background: #111;
+}
+
+.faq-toggle::before {
+    width: 12px;
+    height: 2px;
+    left: 4px;
+    top: 9px;
+}
+
+.faq-toggle::after {
+    width: 2px;
+    height: 12px;
+    left: 9px;
+    top: 4px;
+    transition: transform .2s;
+}
+
+/* '+'アイコンをマイナスに変形 */
+.faq-q.open .faq-toggle::after {
+    transform: scaleY(0);
+}
+
+.faq-a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0 0 0 0;
+    align-items: flex-start;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease, padding .3s ease;
+}
+
+.faq-a.open {
+    padding: 0 0 18px 0;
+    max-height: 500px;
+}
+
+.faq-a-label {
+    display: inline-block;
+    background: #999;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.faq-a-text {
+    white-space: pre-line;
+    line-height: 1.9;
+    font-size: 14px;
+    margin: 0;
+}
+

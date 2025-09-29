@@ -56,4 +56,13 @@ class HomeController extends Controller
         return view('instructor');
     }
 
+    /**
+     * 「よくある質問」ページを表示する
+     * @return View
+     */
+    public function faq(): View
+    {
+        return view('faq');
+    }
+
 }

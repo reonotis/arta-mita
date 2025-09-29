@@ -20,7 +20,7 @@
             'name' => 'ジェゴ エンリケ',
             'role' => 'チーフインストラクター / 黒帯',
             'ribbon_color' => '#111',
-            'image' => '',
+            'image' => asset('images/instructors/ARTA0947.jpg'),
             'bullets' => [
                 'JBJJF 全日本柔術選手権 優勝（黒帯マスター部 2021）',
                 'ASJJF ジャパンオープン 優勝（黒帯ライトフェザー級 2021）',
@@ -31,7 +31,7 @@
             'name' => '岡泉 海',
             'role' => 'サブチーフインストラクター / 黒帯',
             'ribbon_color' => '#111',
-            'image' => '',
+            'image' => asset('images/instructors/ARTA0947.jpg'),
             'bullets' => [
                 'JBJJF 全日本柔術選手権 優勝（紫帯ライトフェザー級 2024）',
                 'IBJJF アジア選手権 優勝（紫帯ライトフェザー級 2023）',
@@ -42,7 +42,7 @@
             'name' => '石黒 翔也',
             'role' => 'インストラクター / 黒帯',
             'ribbon_color' => '#111',
-            'image' => '',
+            'image' => asset('images/instructors/ARTA0947.jpg'),
             'bullets' => [
                 'IBJJF 世界選手権 予選通過、国内大会多数優勝（ライトフェザー級 2023）',
                 'IBJJF アジア選手権 優勝（紫帯ライトフェザー級 2024）',
@@ -53,7 +53,7 @@
             'name' => 'ダニロ 浜崎',
             'role' => 'インストラクター / 黒帯',
             'ribbon_color' => '#111',
-            'image' => '',
+            'image' => asset('images/instructors/ARTA0947.jpg'),
             'bullets' => [
                 'JBJJF 全日本柔術選手権 優勝（紫帯フェザー 2022）',
                 'JBJJF GroundImpact 優勝（青帯 上半期）',
@@ -64,7 +64,7 @@
             'name' => '高橋 逸樹',
             'role' => 'インストラクター / 紫帯',
             'ribbon_color' => '#7a1b9a',
-            'image' => '',
+            'image' => asset('images/instructors/ARTA0947.jpg'),
             'bullets' => [
                 'JBJF ASIAN Jiu-Jitsu Championship 2024 準優勝（青帯ライトフェザー）',
                 'JBJJF 全日本ブラジリアン柔術オープントーナメント 優勝',
