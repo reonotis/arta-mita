@@ -21,4 +21,9 @@ class HomeController extends Controller
         return view('first');
     }
 
+    public function plan()
+    {
+        return view('plan');
+    }
+
 }

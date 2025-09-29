@@ -8,10 +8,10 @@
             'url' => route('first'),
             'route' => 'first'
         ],[
-        //     'title' => '会員プラン',
-        //     'url' => '#',
-        //     'route' => 'plan'
-        // ],[
+            'title' => '会員プラン',
+            'url' => route('plan'),
+            'route' => 'plan'
+        ],[
         //     'title' => 'クラスについて',
         //     'url' => '#',
         //     'route' => 'classes'
