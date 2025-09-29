@@ -78,7 +78,7 @@
                 <!-- ロゴセクション -->
                 <div class="logo-section">
                     <a href="{{ url('/') }}" class="logo-link" rel="home" aria-current="page">
-                        <img src="{{ asset('images/logo/header_logo.png') }}" class="logo-image" alt="アルタ三田" />
+                        <img src="{{ asset('images/logo/header_logo.png') }}" class="logo-image" alt="ARTA BJJ Mita" />
                     </a>
                 </div>
 
@@ -109,7 +109,7 @@
     <div class="offcanvas-menu" id="offcanvas-menu">
         <div class="offcanvas-header">
             <a href="{{ url('/') }}" class="logo-link">
-                <img src="{{ asset('images/logo/header_logo.png') }}" class="offcanvas-logo" alt="アルタ三田" />
+                <img src="{{ asset('images/logo/header_logo.png') }}" class="offcanvas-logo" alt="ARTA BJJ Mita" />
             </a>
         </div>
         <ul class="offcanvas-menu-list">

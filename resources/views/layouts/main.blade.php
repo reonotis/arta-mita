@@ -50,7 +50,7 @@
         })(window, document);
     </script>
 
-    <title>@yield('title', 'アルタ三田 - ブラジリアン柔術')</title>
+    <title>@yield('title', 'ARTA BJJ Mita - ブラジリアン柔術')</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />

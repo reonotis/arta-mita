@@ -4,7 +4,7 @@
             <div class="col-md-12 text-center">
                 <h1 class="main-title">ブラジリアン柔術を始めてみませんか？</h1>
                 <p class="main-subtitle">
-                    アルタ三田では、初心者から上級者まで、すべてのレベルの方を歓迎しています。<br>
+                    ARTA BJJ Mitaでは、初心者から上級者まで、すべてのレベルの方を歓迎しています。<br>
                     経験豊富な指導者が、安全で楽しい環境で柔術を学べるようサポートします。
                 </p>
                 <div class="cta-buttons">
