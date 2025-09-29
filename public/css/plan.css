@@ -1,0 +1,110 @@
+/* Plan page styles */
+.plan-section {
+    padding: 40px 0 80px;
+}
+
+.section-title h3 {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.section-title h3::before,
+.section-title h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    height: 1px;
+    background: #cfcfcf;
+}
+.section-title h3::before { left: 0; }
+.section-title h3::after { right: 0; }
+
+.plan-intro {
+    max-width: 700px;
+    margin: 0 auto 200px;
+    color: #333;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.plan-intro-list {
+    margin: 12px 0 12px 0;
+    padding-left: 20px;
+}
+.plan-intro-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+}
+.plan-intro-list li::before {
+    content: "○";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+}
+
+.plan-card {
+    margin: 30px auto 10rem;
+    max-width: 1000px;
+
+    .plan-hero {
+        position: relative;
+        height: 260px;
+        margin-bottom: 2rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+        & > .plan-hero-title {
+            position: absolute;
+            color: #fff;
+            font-size: 36px;
+            font-weight: 800;
+            z-index: 1;
+        }
+    }
+
+    .plan-table-wrap {
+        max-width: 500px;
+        margin: 0 auto;
+
+        .plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .plan-table th,
+        .plan-table td {
+            border: 1px solid #aaa;
+            padding: 18px 20px;
+            font-size: 14px;
+        }
+        .plan-table th {
+            width: 140px;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+    }
+}
+
+
+
+
+
