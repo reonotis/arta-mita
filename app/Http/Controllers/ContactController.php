@@ -45,7 +45,6 @@ class ContactController extends Controller
             $contact = Contact::create( [
                 'customer_id' => $customer->id,
                 'name' => $request->name,
-                'email' => $request->email,
                 'message' => $request->message,
                 'contact_type' => $request->contact_type,
             ]);

@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('contact', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
             $table->integer('customer_id');
             $table->tinyInteger('contact_type')->default(0)->comment('問い合わせ種別');
 
