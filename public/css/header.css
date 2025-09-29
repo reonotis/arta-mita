@@ -10,8 +10,10 @@
 
     /* ナビゲーションバー */
     .nav-bar {
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
         z-index: 1000;
         background: #fff;
         border-bottom: 1px solid #e0e0e0;
@@ -227,9 +229,18 @@
     }
 }
 
+/* 固定ヘッダー分の余白をメインに付与 */
+.main-content {
+    padding-top: 80px;
+
+    @media (max-width: 1000px) {
+        padding-top: 60px;
+    }
+}
+
 /* ========================================
-   レスポンシブ対応
-   ======================================== */
+レスポンシブ対応
+======================================== */
 @media (max-width: 1000px) {
     .header-container {
         .nav-bar {
