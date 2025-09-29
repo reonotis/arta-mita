@@ -56,7 +56,7 @@
             <div class="facility-grid">
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="店舗入り口">
+                        <img src="{{ asset('images/first/名称未設定-1.jpg') }}" alt="店舗入り口">
                     </div>
                     <div class="facility-caption">
                         <h4>店舗入り口</h4>
@@ -65,7 +65,7 @@
 
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="フロント">
+                        <img src="{{ asset('images/first/フロント.png') }}" alt="フロント">
                     </div>
                     <div class="facility-caption">
                         <h4>フロント</h4>
@@ -74,7 +74,7 @@
 
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="ロッカー">
+                        <img src="{{ asset('images/first/ロッカールーム.png') }}" alt="ロッカー">
                     </div>
                     <div class="facility-caption">
                         <h4>ロッカー</h4>
@@ -83,7 +83,7 @@
 
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="セーフティボックス(金庫)">
+                        <img src="{{ asset('images/first/セーフティボックス.png') }}" alt="セーフティボックス(金庫)">
                     </div>
                     <div class="facility-caption">
                         <h4>セーフティボックス(金庫)</h4>
@@ -92,7 +92,7 @@
 
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="シャワールーム">
+                        <img src="{{ asset('images/first/シャワールーム.png') }}" alt="シャワールーム">
                     </div>
                     <div class="facility-caption">
                         <h4>シャワールーム</h4>
@@ -101,7 +101,7 @@
 
                 <div class="facility-item">
                     <div class="facility-image">
-                        <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="ラウンジ">
+                        <img src="{{ asset('images/first/休憩室​.png') }}" alt="ラウンジ">
                     </div>
                     <div class="facility-caption">
                         <h4>ラウンジ</h4>
@@ -123,7 +123,7 @@
             {{-- お問い合わせについて --}}
             <div class="enrollment-column">
                 <div class="enrollment-image">
-                    <img src="{{ asset('images/mita-info/初心者大歓迎.jpg') }}" alt="お問い合わせについて" />
+                    <img src="{{ asset('images/first/お問い合わせについて.jpg') }}" alt="お問い合わせについて" />
                 </div>
                 <div class="enrollment-content">
                     <h3 class="enrollment-heading">お問い合わせについて</h3>
@@ -134,7 +134,7 @@
             {{-- 無料体験について --}}
             <div class="enrollment-column">
                 <div class="enrollment-image">
-                    <img src="{{ asset('images/mita-info/三田道場の強み.jpg') }}" alt="無料体験について" />
+                    <img src="{{ asset('images/first/無料体験について.jpg') }}" alt="無料体験について" />
                 </div>
                 <div class="enrollment-content">
                     <h3 class="enrollment-heading">無料体験について</h3>
@@ -145,7 +145,7 @@
             {{-- 入会について --}}
             <div class="enrollment-column">
                 <div class="enrollment-image">
-                    <img src="{{ asset('images/mita-info/完璧より前進.jpg') }}" alt="入会について" />
+                    <img src="{{ asset('images/first/入会について.jpg') }}" alt="入会について" />
                 </div>
                 <div class="enrollment-content">
                     <h3 class="enrollment-heading">入会について</h3>
@@ -198,7 +198,6 @@
         </div>
     </div>
 </section>
-
 
 {{-- 費用について --}}
 <section class="fees-info">
@@ -289,7 +288,6 @@
     </div>
 </section>
 
-
 {{-- 休会・退会・クラスコース変更について --}}
 <section class="policy-info">
     <div class="content-wrapper">
@@ -326,9 +324,6 @@
         </div>
     </div>
 </section>
-
-
-
 
 @endsection
 
