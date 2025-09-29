@@ -16,10 +16,10 @@
             'url' => route('class'),
             'route' => 'class'
         ],[
-        //     'title' => 'インストラクター一覧',
-        //     'url' => '#',
-        //     'route' => 'instructors'
-        // ],[
+            'title' => 'インストラクター一覧',
+            'url' => route('instructor'),
+            'route' => 'instructor'
+        ],[
         //     'title' => 'お客様の声',
         //     'url' => '#',
         //     'route' => 'testimonials'
@@ -28,10 +28,10 @@
         //     'url' => '#',
         //     'route' => 'visitor'
         // ],[
-        //     'title' => 'よくある質問',
-        //     'url' => '#',
-        //     'route' => 'faq'
-        // ],[
+            'title' => 'よくある質問',
+            'url' => route('faq'),
+            'route' => 'faq'
+        ],[
             'title' => '体験申込',
             'url' => route('trial'),
             'route' => 'trial'

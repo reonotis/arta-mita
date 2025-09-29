@@ -47,4 +47,13 @@ class HomeController extends Controller
         return view('class');
     }
 
+    /**
+     * 「インストラクター一覧」ページを表示する
+     * @return View
+     */
+    public function instructor(): View
+    {
+        return view('instructor');
+    }
+
 }

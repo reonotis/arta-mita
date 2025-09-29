@@ -10,6 +10,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/first', [HomeController::class, 'first'])->name('first');
 Route::get('/plan', [HomeController::class, 'plan'])->name('plan');
 Route::get('/class', [HomeController::class, 'class'])->name('class');
+Route::get('/instructor', [HomeController::class, 'instructor'])->name('instructor');
+Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
+
 
 Route::get('/trial', [TrialController::class, 'index'])->name('trial');
 Route::post('/trial', [TrialController::class, 'register']);
