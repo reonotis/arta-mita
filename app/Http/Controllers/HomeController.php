@@ -11,19 +11,40 @@ use Illuminate\View\View;
 
 class HomeController extends Controller
 {
-    public function index()
+    /**
+     * トップページを表示する
+     * @return View
+     */
+    public function index(): View
     {
         return view('welcome');
     }
 
-    public function first()
+    /**
+     * 「初めての方へ」ページを表示する
+     * @return View
+     */
+    public function first(): View
     {
         return view('first');
     }
 
-    public function plan()
+    /**
+     * 「会員プラン」ページを表示する
+     * @return View
+     */
+    public function plan(): View
     {
         return view('plan');
+    }
+
+    /**
+     * 「クラスについて」ページを表示する
+     * @return View
+     */
+    public function class(): View
+    {
+        return view('class');
     }
 
 }

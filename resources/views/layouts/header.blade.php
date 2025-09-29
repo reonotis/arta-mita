@@ -12,10 +12,10 @@
             'url' => route('plan'),
             'route' => 'plan'
         ],[
-        //     'title' => 'クラスについて',
-        //     'url' => '#',
-        //     'route' => 'classes'
-        // ],[
+            'title' => 'クラスについて',
+            'url' => route('class'),
+            'route' => 'class'
+        ],[
         //     'title' => 'インストラクター一覧',
         //     'url' => '#',
         //     'route' => 'instructors'
