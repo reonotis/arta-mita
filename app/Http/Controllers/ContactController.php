@@ -49,15 +49,15 @@ class ContactController extends Controller
                 'contact_type' => $request->contact_type,
             ]);
 
-            // // 管理者への問い合わせ通知メール送信
-            // Mail::to(env('MAIL_FROM_ADDRESS'))
-            //     ->bcc('fujisawareon@yahoo.co.jp')
-            //     ->send(new ContactNotificationMail($contact));
+             // 管理者への問い合わせ通知メール送信
+             Mail::to(env('MAIL_FROM_ADDRESS'))
+                 ->bcc('fujisawareon@yahoo.co.jp')
+                 ->send(new ContactNotificationMail($contact));
 
-            // // 問い合わせ完了メール送信
-            // Mail::to($contact->email)
-            //     ->bcc('fujisawareon@yahoo.co.jp')
-            //     ->send(new ContactThankYouMail($contact));
+             // 問い合わせ完了メール送信
+             Mail::to($contact->email)
+                 ->bcc('fujisawareon@yahoo.co.jp')
+                 ->send(new ContactThankYouMail($contact));
 
 
             // 成功レスポンス
