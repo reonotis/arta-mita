@@ -71,6 +71,17 @@
                 'ADU DHABI GRAND SLAM JIU JITSU WORLD TOUR TOKYO 3位（青帯 2023）',
             ],
         ],
+        [
+            'name' => '鈴木 太陽',
+            'role' => 'インストラクター / 茶帯',
+            'ribbon_color' => '#703f0f',
+            'image' => asset('images/instructors/ARTA0569.jpg'),
+            'bullets' => [
+                '第25回全日本ブラジリアン柔術選手権 アダルト紫帯フェザー級 ３位',
+                '第10回全日本ノーギ柔術オープントーナメント アダルト茶帯オープンクラス　優勝',
+                '第26回全日本ブラジリアン柔術選手権 アダルト茶帯ライト級　準優勝',
+            ],
+        ],
     ];
 @endphp
 
