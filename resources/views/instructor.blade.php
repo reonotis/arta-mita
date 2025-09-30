@@ -20,7 +20,7 @@
             'name' => 'ジェゴ エンリケ',
             'role' => 'チーフインストラクター / 黒帯',
             'ribbon_color' => '#111',
-            'image' => asset('images/instructors/ARTA0487.jpg'),
+            'image' => asset('images/instructors/ARTA0369.jpg'),
             'bullets' => [
                 'JBJJF 全日本柔術選手権 優勝（黒帯マスター部 2021）',
                 'ASJJF ジャパンオープン 優勝（黒帯ライトフェザー級 2021）',
