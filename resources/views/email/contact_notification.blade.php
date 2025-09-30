@@ -6,7 +6,7 @@
 ■名前<br>
 　 {{ $contact->name }}<br>
 ■メールアドレス<br>
-　{{ $contact->email }}<br>
+　{{ $customer->email }}<br>
 ■お問い合わせ内容<br>
 　{{ $contact->message }}<br>
 <br>

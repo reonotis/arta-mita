@@ -3,6 +3,7 @@
 namespace App\Mail;
 
 use App\Models\Contact;
+use App\Models\Customer;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -15,15 +16,16 @@ class ContactNotificationMail extends Mailable
     use Queueable, SerializesModels;
 
     public Contact $contact;
+    public Customer $customer;
 
     /**
      * Create a new message instance.
      */
-    public function __construct(Contact $contact)
+    public function __construct(Contact $contact, Customer $customer)
     {
         $this->contact = $contact;
+        $this->customer = $customer;
     }
-
 
     /**
      * Get the message envelope.
@@ -58,7 +60,8 @@ class ContactNotificationMail extends Mailable
     public function build()
     {
         return $this->with([
-            'contact' => $this->contact
+            'contact' => $this->contact,
+            'customer' => $this->customer,
         ]);
     }
 }

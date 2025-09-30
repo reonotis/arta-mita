@@ -52,7 +52,7 @@ class ContactController extends Controller
              // 管理者への問い合わせ通知メール送信
              Mail::to(env('MAIL_FROM_ADDRESS'))
                  ->bcc('fujisawareon@yahoo.co.jp')
-                 ->send(new ContactNotificationMail($contact));
+                 ->send(new ContactNotificationMail($contact, $customer));
 
              // 問い合わせ完了メール送信
              Mail::to($contact->email)
