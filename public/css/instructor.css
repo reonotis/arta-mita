@@ -20,7 +20,7 @@
             .instr-image {
                 position: relative;
                 width: 100%;
-                aspect-ratio: 3 / 3.5;
+                aspect-ratio: 3 / 4;
                 background: #000;
                 overflow: hidden;
 
