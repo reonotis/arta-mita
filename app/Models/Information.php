@@ -16,22 +16,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon $updated_at
  * @property Carbon $deleted_at
  */
-class Contact extends Model
+class Information extends Model
 {
     use HasFactory, SoftDeletes;
 
-    const CONTACT_TYPE_JOIN = 1;
-    const CONTACT_TYPE_PRIVATE_LESSON = 2;
-    const CONTACT_TYPE_VISITOR = 3;
-    const CONTACT_TYPE_OTHER = 4;
-    const CONTACT_TYPE_LIST = [
-        self::CONTACT_TYPE_JOIN => '入会・退会・休会',
-        self::CONTACT_TYPE_PRIVATE_LESSON => 'プライベートレッスン申し込み',
-        self::CONTACT_TYPE_VISITOR => 'ビジター',
-        self::CONTACT_TYPE_OTHER => 'その他',
+    const STATUS_HIDE = 0;
+    const STATUS_DISPLAY= 1;
+    const STATUS_LIST = [
+        self::STATUS_HIDE => '非表示',
+        self::STATUS_DISPLAY => '表示',
     ];
 
-    protected $table = 'contact';
+    protected $table = 'information';
 
     protected $casts = [
         'created_at' => 'datetime',

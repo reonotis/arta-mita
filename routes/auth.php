@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\InformationController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
@@ -40,6 +41,7 @@ Route::middleware('auth')->group(function () {
     // 管理者
     Route::prefix('admin')->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('admin_home');
+        Route::get('/information-list', [InformationController::class, 'information'])->name('admin_information');
         Route::get('/trial-list', [HomeController::class, 'trial'])->name('admin_trial');
         Route::get('/contact-list', [HomeController::class, 'contact'])->name('admin_contact');
 

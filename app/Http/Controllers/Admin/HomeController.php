@@ -37,7 +37,7 @@ class HomeController extends Controller
      */
     public function trial(): View
     {
-        $trial = $this->trial_service->getOneWeekTrial();
+        $trial = $this->trial_service->getAllTrial();
 
         return view('admin.trial', [
             'trial' => $trial,
