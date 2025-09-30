@@ -7,7 +7,7 @@
 @section('content')
 
 
-<img src="{{ asset('images/ARTA0909.jpg') }}" alt="arta-mita" class="hero-image">
+<img src="{{ asset('images/ARTA0908.jpg') }}" alt="arta-mita" class="hero-image">
 
 {{-- メインコンテンツセクション --}}
 <section class="how-to-brazilian-jiu-jitsu">
