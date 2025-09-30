@@ -1,0 +1,30 @@
+
+:root {
+    --main-color: #071349;
+}
+body {
+    background: #e3e3e3;
+}
+
+.header {
+    height: 50px;
+    border-bottom: solid 1px #333;
+    gap: 1rem;
+
+    & > a {
+        height: 100%;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--main-color);
+
+        &:hover {
+            background: #ccc;
+        }
+
+        &.active {
+            border-bottom: solid 5px var(--main-color);
+        }
+    }
+}
