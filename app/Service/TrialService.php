@@ -2,12 +2,9 @@
 
 namespace App\Service;
 
-use App\Consts\CommonApplyConst;
 use App\Models\Trial;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Log;
 
 class TrialService
 {
@@ -23,10 +20,23 @@ class TrialService
      */
     public function getOneWeekTrial(): Collection
     {
-        return Trial::where('date_time', CommonApplyConst::APPLY_TYPE_TRIAL)
-            ->where('apply_date', '>=', Carbon::now()->subWeek())
-            ->where('apply_date', '<=', Carbon::now())
+        return Trial::join('customers', 'customers.id', '=', 'trial.customer_id')
+            ->whereNull('customers.deleted_at')
+            ->whereBetween('date_time', [
+                Carbon::today(),
+                Carbon::now()->addWeek(),
+            ])
+            ->orderBy('date_time', 'asc')
             ->get();
+    }
+
+    public function getOneWeekTrialCount(): int
+    {
+        return Trial::whereBetween('date_time', [
+                Carbon::today(),
+                Carbon::now()->addWeek(),
+            ])
+            ->count();
     }
 
 }

@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('admin_home');
         Route::get('/trial-list', [HomeController::class, 'trial'])->name('admin_trial');
+        Route::get('/contact-list', [HomeController::class, 'contact'])->name('admin_contact');
 
     });
 });

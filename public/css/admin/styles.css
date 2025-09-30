@@ -28,3 +28,25 @@ body {
         }
     }
 }
+
+
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+
+    thead {
+        background: #ccc;
+
+        th {
+            border: 1px solid #333;
+            padding: 0.5rem;
+        }
+    }
+
+    td {
+        border: 1px solid #333;
+        padding: 0.5rem;
+    }
+}
+
