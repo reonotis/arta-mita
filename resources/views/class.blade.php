@@ -62,7 +62,7 @@
         <div class="section-body">
             <h3 class="weekly-title">週間スケジュール</h3>
             <div class="basic-calendar-image">
-                <img src="{{ asset('images/basic-calendar.png') }}" alt="basic-calendar" class="">
+                <img src="{{ asset('images/basic-calendar.png') }}?v=20251002" alt="basic-calendar" class="">
             </div>
 
             @foreach ($classes as $class)
