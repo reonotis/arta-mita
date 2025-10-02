@@ -136,17 +136,6 @@
                     </div>
                 </div>
 
-                {{-- Women class --}}
-                <div class="course-card">
-                    <div class="course-image">
-                        <img src="{{ asset('images/course-info/WomensOnlyClass.jpg') }}" alt="Women class" />
-                    </div>
-                    <div class="course-content">
-                        <h4 class="course-title-en">Women class</h4>
-                        <h5 class="course-title-jp">女性限定クラス</h5>
-                        <p>女性の方だけが参加できるクラスです。女性インストラクターが指導し、安心して柔術を学べる環境を提供しています。</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
